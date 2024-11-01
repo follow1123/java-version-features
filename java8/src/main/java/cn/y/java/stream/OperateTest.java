@@ -60,7 +60,16 @@ public class OperateTest {
 
     @Test
     public void testSort() {
+        Integer[] integers = {3, 34, 234, 423, 23};
+        // 默认升序排序
+        Arrays.stream(integers).sorted().forEach(System.out::println);
+        Arrays.stream(integers).sorted(Integer::compareTo).forEach(System.out::println);
+        // 数组内的元素还是原来的顺序，stream操作不会修改原容器内的元素
+        System.out.println(Arrays.toString(integers));
 
+        List<User> users = User.listUser();
+        // 定制排序
+        users.stream().sorted((u1, u2) -> u1.getName().compareTo(u2.getName())).forEach(System.out::println);
     }
 
 }
