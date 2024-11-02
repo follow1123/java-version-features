@@ -11,9 +11,13 @@
     <modules>
         <module>java8</module>
         <module>java9</module>
+        <module>java10-11</module>
+        <module>java12-17</module>
     </modules>
 
     <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

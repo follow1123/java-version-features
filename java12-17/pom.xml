@@ -7,21 +7,13 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>java9</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>java12-17</artifactId>
 
-    <name>java9</name>
-    <modules>
-        <module>module-a</module>
-        <module>module-b</module>
-        <module>other-features</module>
-        <module>module-c</module>
-        <module>module-d</module>
-    </modules>
+    <name>java12-17</name>
 
     <properties>
-        <maven.compiler.source>9</maven.compiler.source>
-        <maven.compiler.target>9</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
